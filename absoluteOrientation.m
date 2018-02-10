@@ -19,7 +19,7 @@ for i = 1:size(A,1)
 	N=N + Bprime(i,:)'*Aprime(i,:);
 end
 
-[u,s,v]=svd(N);
+[u,s,v] = svd(N);
 R = v*(u');
 
 B_rot = Bprime*(R');
